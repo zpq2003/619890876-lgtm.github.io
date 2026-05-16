@@ -21,7 +21,7 @@
 
 本项目基于论文《Exploring the Controlling Factors of Watershed Streamflow Variability Using Hydrological and Machine Learning Models》，聚焦于滦河流域径流变化的主控因子分析。
 
-*   **核心方法**：利用数据库流域模拟数据，基于python语言，将XGBoost与RF模型对径流量的预测值与实际值进行拟合分析。通过四个统计学指标(R^2、NSE、KGE、PBIAS）的量化对比，证明了XGBoost模型在整体预测性能上优于RF模型
+*   **核心方法**：利用数据库流域模拟数据，基于R语言，将XGBoost与RF模型对径流量的预测值与实际值进行拟合分析。通过四个统计学指标(R^2、NSE、KGE、PBIAS）的量化对比，证明了XGBoost模型在整体预测性能上优于RF模型
 *   **代码仓库**：[619890876-lgtm.github.io](https://github.com/619890876-lgtm/619890876-lgtm.github.io)
 *   **研究方向**：水文水资源 / 流域径流变化模拟
 
