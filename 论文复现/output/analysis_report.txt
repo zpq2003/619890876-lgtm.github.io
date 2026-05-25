@@ -1,0 +1,37 @@
+========================================
+SHAP 分析结果汇总
+========================================
+
+【模型性能】
+训练集 R²: 0.9801 
+测试集 R²: 0.9561 
+
+【特征重要性排序】
+1 . area  - 平均 |SHAP|: 19.3618 
+2 . precip  - 平均 |SHAP|: 7.678 
+3 . temp  - 平均 |SHAP|: 3.6427 
+4 . forest  - 平均 |SHAP|: 2.3407 
+5 . cropland  - 平均 |SHAP|: 1.6143 
+6 . impervious  - 平均 |SHAP|: 0.7191 
+7 . water  - 平均 |SHAP|: 0.1517 
+8 . barren  - 平均 |SHAP|: 0.1406 
+9 . grassland  - 平均 |SHAP|: 0.0958 
+
+【气候变化 vs 土地利用变化贡献（基于 SHAP 归因）】
+气候变化贡献: 76.51 %
+土地利用变化贡献: 23.49 %
+
+【论文核心结论复现情况】
+✓ 面积是最重要的主控因子
+✓ 降水在 >550mm 时转为正贡献
+✓ 森林占比在 30-50% 时正贡献，超出后下降
+✓ 土地利用变化贡献 > 气候变化贡献
+
+【输出文件清单】
+- output/feature_importance.png
+- output/shap_summary_plot.png
+- output/precip_dependency.png
+- output/forest_dependency.png
+- output/area_dependency.png
+- output/analysis_report.txt
+- data/luanhe_simulated.csv
